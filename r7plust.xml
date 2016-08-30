@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remove-project name="MoKee/android_build" />
+  <remove-project name="MoKee/android_bootable_recovery-twrp" />
+  <remove-project name="CyanogenMod/android_external_sepolicy" />
+  <remove-project name="CyanogenMod/android_external_tinyalsa" />
+
+  <project path="build" name="countstarlight/android_build-mtk" groups="pdk" remote="private" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="bootable/recovery-twrp" name="countstarlight/android_bootable_recovery_r7plust" groups="pdk" remote="private" />
+  <project path="external/sepolicy" name="countstarlight/android_external_sepolicy-mtk" groups="pdk" remote="private" />
+  <project path="external/tinyalsa" name="countstarlight/android_external_tinyalsa-mtk" groups="pdk" remote="private" />
+
+  <!-- vim:set ai et ts=2 sw=2 sts=2 fenc=utf-8: -->
+</manifest>
