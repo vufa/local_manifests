@@ -6,7 +6,7 @@
   <remove-project name="MoKee/android_external_sepolicy" />
   <remove-project name="ThirdProject/android_external_tinyalsa" />
 
-  <project path="build" name="countstarlight/android_build-mtk" groups="pdk" remote="private" >
+  <project path="build" name="MoKee/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
